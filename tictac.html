@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>First JS App</title>
+	<meta name="Author" content="George Djabarov"/>
+	<meta name="Description" content="tic tac toe app "/>
+    <link rel="stylesheet" href="tictac.css" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+
+</head>
+<body>
+    <h2>
+        <p>Welcome to tic tac toe Game</p>
+    </h2>
+
+    <div id="tic-tac-app">
+        <!-- winners status -->
+        <div id="wins">
+            <span id="x-player">X : {{X_wins}} </span>
+            <span id="o-player">O : {{O_wins}}</span>
+
+        </div>
+
+        <!-- app field -->
+        <div id="app-field">
+            <div v-for="(rows, rowIndex) in squares">
+                <button  v-bind:disabled="game_over" v-for="(column, columnIndex) in rows" 
+                        class="buttonXO" 
+                        @click="playerMove(rowIndex, columnIndex),winnerCheck()">
+                        {{ squares[rowIndex][columnIndex]}}</button>
+
+            </div>
+                          
+        </div>
+
+        <!-- restart game -->
+        <div id="restart-game">
+            <button id="button-restart" v-on:click="restartGame">Restart</button>
+
+
+        </div >
+        <h2 id="winnerMsg">
+            <p  v-if="game_over">{{winMsg}}</p>
+        </h2>
+    </div>
+
+    <script src="tictac.js"></script>
+</body>
+
+
+
+
+</html>

@@ -1,0 +1,85 @@
+h2
+{
+    text-align: center;
+    width:600px;
+    height:60px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(84, 60, 148);
+}
+
+#winnerMsg
+{
+    background-color: rgb(255, 255, 255);
+}
+
+#wins
+{
+    text-align: center;
+    width:600px;
+    height:20px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #30a15f;
+}
+
+#x-player
+{
+    text-align: center;
+    width:60px;
+    border-style:groove ;
+    height:20px;
+    margin: 20px;
+    padding: 8px 35px;
+    background-color: rgba(125, 110, 190, 0.938);
+}
+
+#o-player
+{
+    text-align: center;
+    width:60px;
+    border-style:groove ;
+    height:20px;
+    margin: 20px;
+    padding: 8px 35px;
+    background-color: rgba(125, 110, 190, 0.938);
+
+}
+
+#tic-tac-app
+{
+	text-align:center;
+}
+
+.buttonXO
+{
+    width:60px;
+    height:60px;
+    margin: 8px;
+    padding: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #30a15f;
+
+
+}
+
+button:disabled,
+button[disabled]{
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+}
+
+#button-restart
+{
+	margin:20px;
+}
+
+.playerX
+{
+    background-color:saddlebrown;
+
+
+}
+
